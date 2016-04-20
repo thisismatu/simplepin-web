@@ -11,13 +11,13 @@ body {
 }
 
 .wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1rem;
-  display: flex;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
   height: 90vh
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 1rem;
 }
 
 .phone, .description {
@@ -30,28 +30,40 @@ body {
 }
 
 .description {
-  width: 50%;
   padding-right: 10vw;
+  width: 50%;
 }
 
 .icon {
+  border-radius: 8px;
   display: inline-block;
+  overflow: hidden;
   vertical-align: middle;
 }
 
 h1 {
   display: inline-block;
-  vertical-align: middle;
-  line-height: 72px;
+  font-weight: 600;
+  line-height: 76px;
   margin: 0 0 0 1rem;
+  vertical-align: middle;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 footer {
-  flex: none;
   align-self: flex-start;
   color: gray;
-  text-align: center;
+  flex: none;
   padding: 2rem 1rem;
+  text-align: center;
   width: 100%;
 }
 
@@ -72,9 +84,9 @@ footer a:first-of-type {
   }
 
   .phone, .description {
-    width: 100%;
-    text-align: center;
     padding: 0;
+    text-align: center;
+    width: 100%;
   }
 
   .description {
