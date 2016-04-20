@@ -80,6 +80,13 @@ img {
   display: none;
 }
 
+.browserupgrade {
+  text-align: center;
+  background: #eee;
+  padding: 1rem;
+  margin: 0;
+}
+
 @media screen and (max-width: 786px) {
   .wrapper {
     height: auto;
