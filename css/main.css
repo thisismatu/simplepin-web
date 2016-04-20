@@ -1,0 +1,84 @@
+* {box-sizing: border-box;}
+
+body {
+  background: white;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90vh
+}
+
+.phone, .description {
+  flex: 0 1 auto;
+}
+
+.phone {
+  text-align: center;
+  width: 50%;
+}
+
+.description {
+  width: 50%;
+  padding-right: 10vw;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 72px;
+  margin: 0 0 0 1rem;
+}
+
+footer {
+  flex: none;
+  align-self: flex-start;
+  color: gray;
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+footer a {
+  color: inherit;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+footer a:first-of-type {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 786px) {
+  .wrapper {
+    height: auto;
+    padding-top: 2rem;
+  }
+
+  .phone, .description {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .description {
+    order: -1;
+    padding-bottom: 2rem;
+  }
+}
