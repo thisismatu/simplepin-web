@@ -40,8 +40,10 @@ body {
 .icon {
   border-radius: 8px;
   display: inline-block;
+  height: 72px;
   overflow: hidden;
   vertical-align: middle;
+  width: 72px;
 }
 
 h1 {
