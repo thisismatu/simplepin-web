@@ -28,7 +28,7 @@ body {
   width: 50%;
 }
 
-.simplepin-gif {
+.simplepin-video {
   background: url(../img/device.jpg) no-repeat;
   background-size: contain;
   margin: 0 auto;
@@ -36,7 +36,7 @@ body {
   width: 290px;
 }
 
-.simplepin-gif > .gif {
+.simplepin-video > video {
   position: relative;
   top: 76px;
   left: 20px;
