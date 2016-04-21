@@ -23,16 +23,29 @@ body {
   padding: 1rem;
 }
 
-.phone, .description {
-  flex: 0 1 auto;
-}
-
 .phone {
-  text-align: center;
+  flex: 0 1 auto;
   width: 50%;
 }
 
+.simplepin-gif {
+  background: url(../img/device.jpg) no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  height: 596px;
+  width: 290px;
+}
+
+.simplepin-gif > .gif {
+  position: relative;
+  top: 76px;
+  left: 20px;
+  width: 250px;
+  height: 444px;
+}
+
 .description {
+  flex: 0 1 auto;
   padding-right: 5vw;
   width: 50%;
 }
@@ -91,7 +104,6 @@ img {
   .wrapper {
     height: auto;
     padding-top: 2rem;
-    text-align: center;
   }
 
   .phone, .description {
@@ -99,14 +111,15 @@ img {
     width: 100%;
   }
 
-  .icon {
-    width: 64px;
-    height: 64px;
-  }
-
   .description {
     order: -1;
     padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .icon {
+    height: 64px;
+    width: 64px;
   }
 
   .footer-desktop {
@@ -114,6 +127,7 @@ img {
   }
 
   .footer-mobile {
+    text-align: center;
     display: block;
     width: 100%;
   }
