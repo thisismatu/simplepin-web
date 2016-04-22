@@ -65,7 +65,7 @@ h1 {
   vertical-align: middle;
 }
 
-h3 {
+h2, h3 {
   font-weight: 600;
 }
 
@@ -98,6 +98,12 @@ img {
   background: #eee;
   padding: 1rem;
   margin: 0;
+}
+
+.legal {
+  max-width: 720px;
+  margin: 5vw auto;
+  padding: 0 1rem;
 }
 
 @media screen and (max-width: 786px) {
