@@ -73,9 +73,23 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: #03c;
+  text-decoration: none;
+}
+
 .button {
   display: inline-block;
   margin-top: 1rem;
+}
+
+.button-blue {
+  line-height: 56px;
+  background-color: #06c;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  padding: 0 30px;
 }
 
 .footer {
