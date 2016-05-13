@@ -29,7 +29,8 @@ body {
 }
 
 .simplepin-video {
-  background: url(../img/device.jpg) no-repeat;
+  background-image: url(../img/device.jpg);
+  background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
   height: 596px;
