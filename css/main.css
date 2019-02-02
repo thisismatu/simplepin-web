@@ -1,4 +1,12 @@
-.brand-blue {
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.bg-sp-blue {
+  background: #06c;
+}
+
+.sp-blue {
   color: #06c;
 }
 
