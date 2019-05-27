@@ -19,104 +19,89 @@
   <link rel="stylesheet" href="css/tachyons.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="sans-serif near-black lh-copy">
+<body class="sans-serif dark-gray lh-copy">
   <!--[if lt IE 8]>
       <p class="browserupgrade tc bg-light-gray ma0 pa3 f6">You are using an <strong>outdated</strong> browser. Please <a class="link blue" href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div class="flex flex-column flex-row-l vh-100-l">
-    <div class="w-50-l ph4 order-last-l overflow-scroll smooth-scroll">
-      <div class="flex flex-column justify-center mw6 pv5 center vh-100-l">
-        <div class="flex items-center mb3">
-          <img class="db mr2" src="img/art_pin.png" srcset="img/art_pin.png 1x, img/art_pin@2x.png 2x" alt="Simplepin" width="48">
-          <h1 class="f2 fw7 lh-title mt0 mb1">Simplepin</h1>
+  <div class="mw8 center mb6-l mb5-m mb4">
+    <div class="flex items-center pa4 pr3">
+      <img class="db mr2" src="img/art_pin.png" srcset="img/art_pin.png 1x, img/art_pin@2x.png 2x" alt="Simplepin" width="40">
+      <span class="fw7 f4 near-black">Simplepin</span>
+      <nav class="ml-auto">
+        <a href="#features" class="dib-ns dn link gray hover-sp-blue pa3">Features</a>
+        <a href="http://onelink.to/" class="link gray hover-sp-blue pa3">Get the app</a>
+      </nav>
+    </div>
+  </div>
+  <div class="mw8 center mb6-ns mb5">
+    <div class="flex flex-wrap items-center">
+      <div class="w-50-l w-100 pa4 tl-l tc">
+        <h1 class="f2 lh-title mt0 mb3">A simple Pinboard app</h1>
+        <h2 class="f3 lh-title fw5 mt0 mb4">Add, read and manage your Pinboard bookmarks with ease. There's no fluff, just&nbsp;the basics done well.</h2>
+        <div class="mb4 flex justify-start-l justify-center">
+          <a href="" class="grow mr3">
+            <img src="img/appstore.svg" height="48" class="db">
+          </a>
+          <a href="" class="grow">
+            <img src="img/playstore.svg" height="48" class="db">
+          </a>
         </div>
-        <h2 class="f3 fw5 lh-title mt0 mb3">A simple app for your Pinboard bookmarks</h2>
-        <p class="f5 mt0 mb3">Simplepin makes reading and managing your Pinboard bookmarks easy. With just the most basic features done right, it's a good companion for any Pinboard user.</p>
         <div class="gray f6 mb4">
-          <span class="db i">“It’s super fast, has a decent share extension, supports 1Password, makes it easy to search for things in your bookmarks list — try typing in multiple tags; it works flawlessly — and even supports Split View multitasking on iPad.”</span>
+          <span class="db i">“It’s super fast, has a decent share extension, supports 1Password, makes it easy to search for things in your bookmarks list — try typing in multiple tags; it works flawlessly – and even supports Split View multitasking on iPad.”</span>
           <a class="dib link sp-blue dim mt2" href="https://thesweetsetup.com/apps/best-pinboard-app-ios/">The Sweet Setup</a>
         </div>
-        <div class="flex">
-          <a class="db dim mr3" href="https://itunes.apple.com/us/app/simplepin/id1107506693?ls=1&mt=8" target="_blank" rel="noopener">
-            <img class="db" height="48" src="img/appstore.svg" alt="Download Simplepin on the Appstore">
-          </a>
-          <a class="dn dim ba sp-blue white link br2 flex-l items-center ph4" href="#features-desktop">Learn more</a>
-          <a class="dn-l db dim ba sp-blue white link br2 flex items-center ph3 nowrap" href="#features-mobile">Learn more</a>
-        </div>
       </div>
-      <div class="dn flex-l flex-column justify-center mw6 pv4 center vh-100-l">
-        <h2 id="features-desktop" class="f2 fw7 mt0 mb4">Features</h2>
-        <div class="flex flex-wrap">
-          <div class="w-50-l pb4-l pr3-l pv3">
-            <h3 class="f4 fw5 mt0 mb2">Simple at its core</h3>
-            <p class="f5 gray mt0 mb2">Everything you need for managing your bookmarks without the bloat.</p>
-          </div>
-          <div class="w-50-l pb4-l pr3-l pv3">
-            <h3 class="f4 fw5 mt0 mb2">All the lists</h3>
-            <p class="f5 gray mt0 mb2">All the lists from Pinboard at your fingertips: all, unread, private, public and starred.</p>
-          </div>
-          <div class="w-50-l pb4-l pr3-l pv3">
-            <h3 class="f4 fw5 mt0 mb2">A good search</h3>
-            <p class="f5 gray mt0 mb2">Find your bookmarks with ease, try typing multiple search terms.</p>
-          </div>
-          <div class="w-50-l pb4-l pr3-l pv3">
-            <h3 class="f4 fw5 mt0 mb2">Share extension</h3>
-            <p class="f5 gray mt0 mb2">Find something you like? Add it using the share extension.</p>
-          </div>
-          <div class="w-50-l pb4-l pr3-l pv3">
-            <h3 class="f4 fw5 mt0 mb2">Password manager</h3>
-            <p class="f5 gray mt0 mb2">Simplepin integrates with password managers such as LastPass and 1Password</p>
-          </div>
-          <div class="w-50-l pb4-l pr3-l pv3">
-            <h3 class="f4 fw5 mt0 mb2">Multitasking ready</h3>
-            <p class="f5 gray mt0 mb2">Enable opening links in external browser and unleash your inner power user</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="w-50-l h-inherit-l flex-l items-center-l bg-lightest-blue ph4 pv5 order-first-l relative">
-      <div class="simplepin-video">
-        <video autoplay muted loop preload="auto">
-          <source src="img/video.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-    <div class="dn-l ph4 pv5 center">
-      <h2 id="features-mobile" class="f2 fw7 mt0 pt4 mb4">Features</h2>
-      <div class="flex flex-wrap">
-        <div class="pb4">
-          <h3 class="f4 fw5 mt0 mb2">Simple at its core</h3>
-          <p class="f5 gray mt0 mb2">Everything you need for managing your bookmarks without the bloat.</p>
-        </div>
-        <div class="pb4">
-          <h3 class="f4 fw5 mt0 mb2">All the lists</h3>
-          <p class="f5 gray mt0 mb2">All the lists from Pinboard at your fingertips: all, unread, private, public and starred.</p>
-        </div>
-        <div class="pb4">
-          <h3 class="f4 fw5 mt0 mb2">A good search</h3>
-          <p class="f5 gray mt0 mb2">Find your bookmarks with ease, try typing multiple search terms.</p>
-        </div>
-        <div class="pb4">
-          <h3 class="f4 fw5 mt0 mb2">Share extension</h3>
-          <p class="f5 gray mt0 mb2">Find something you like? Add it using the share extension.</p>
-        </div>
-        <div class="pb4">
-          <h3 class="f4 fw5 mt0 mb2">Password manager</h3>
-          <p class="f5 gray mt0 mb2">Simplepin integrates with password managers such as LastPass and 1Password</p>
-        </div>
-        <div class="pb4">
-          <h3 class="f4 fw5 mt0 mb2">Multitasking ready</h3>
-          <p class="f5 gray mt0 mb2">Enable opening links in external browser and unleash your inner power user</p>
+      <div class="w-50-l w-100 ph3">
+        <div class="simplepin-video">
+          <video autoplay muted loop preload="auto">
+            <source src="img/video.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
   </div>
-
-  <footer class="absolute-l bottom-0-l right-0-l w-50-l silver f6 pa3 tc">
-    <a class="link silver dim" href="https://mathiaslindholm.com/">&copy;&nbsp;Mathias&nbsp;Lindholm</a>
-    <a class="link silver ph2 dim" href="javascript:location='mailto:\u006d\u0061\u0074\u0068\u0069\u0061\u0073\u002e\u006c\u0069\u006e\u0064\u0068\u006f\u006c\u006d\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d?subject=Simplepin';void 0">Contact</a>
-    <a class="link silver ph2 dim" href="legal.html">Legal</a>
-  </footer>
+  <div id="features" class="mw8 center mb6-l mb5-m mb4">
+    <div class="flex flex-wrap pa0-ns pa3">
+      <div class="w-33-l w-50 pa4-ns pa3 tl-l tc">
+        <img src="img/art_pin.png" width="32" class="mb2">
+        <h3 class="f4 fw6 lh-title mt0 mb2">All your lists</h3>
+        <p class="gray mv0">All, unread, private, public and starred – they're all there</p>
+      </div>
+      <div class="w-33-l w-50 pa4-ns pa3 tl-l tc">
+        <img src="img/art_pin.png" width="32" class="mb2">
+        <h3 class="f4 fw6 lh-title mt0 mb2">Powerful search</h3>
+        <p class="gray mv0">Find your bookmarks with ease by using multiple search terms</p>
+      </div>
+      <div class="w-33-l w-50 pa4-ns pa3 tl-l tc">
+        <img src="img/art_pin.png" width="32" class="mb2">
+        <h3 class="f4 fw6 lh-title mt0 mb2">Share extension</h3>
+        <p class="gray mv0">Add bookmarks from the browser with the nifty share extension</p>
+      </div>
+      <div class="w-33-l w-50 pa4-ns pa3 tl-l tc">
+        <img src="img/art_pin.png" width="32" class="mb2">
+        <h3 class="f4 fw6 lh-title mt0 mb2">Reader mode</h3>
+        <p class="gray mv0">Focus on reading without ads, floats or other distractions</p>
+      </div>
+      <div class="w-33-l w-50 pa4-ns pa3 tl-l tc">
+        <img src="img/art_pin.png" width="32" class="mb2">
+        <h3 class="f4 fw6 lh-title mt0 mb2">Password manager</h3>
+        <p class="gray mv0">Integrates with password managers like LastPass and 1Password</p>
+      </div>
+      <div class="w-33-l w-50 pa4-ns pa3 tl-l tc">
+        <img src="img/art_pin.png" width="32" class="mb2">
+        <h3 class="f4 fw6 lh-title mt0 mb2">Multitasking</h3>
+        <p class="gray mv0">Open links in external browser and enjoy split screen multitasking</p>
+      </div>
+    </div>
+  </div>
+  <div class="mw8 center">
+    <div class="flex items-center justify-between pa4">
+      <span class="silver f6 fw6 mr4-ns">Simplepin</span>
+      <a href="javascript:location='mailto:\u006d\u0061\u0074\u0068\u0069\u0061\u0073\u002e\u006c\u0069\u006e\u0064\u0068\u006f\u006c\u006d\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d?subject=Simplepin';void 0" class="link silver f6 hover-sp-blue mr4-ns ml-auto-ns">Contact</a>
+      <a href="legal.html" class="link silver f6 hover-sp-blue mr4-ns">Privacy policy</a>
+      <a href="" class="link silver f6 hover-sp-blue">Press kit</a>
+    </div>
+  </div>
   <script>
     window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
     ga('create','UA-35949347-3','auto');ga('send','pageview')

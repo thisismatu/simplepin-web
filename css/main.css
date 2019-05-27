@@ -6,7 +6,7 @@
   background: #06c;
 }
 
-.sp-blue {
+.sp-blue, .hover-sp-blue:hover {
   color: #06c;
 }
 
