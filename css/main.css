@@ -30,3 +30,7 @@
 .link:focus {
   outline: none;
 }
+
+.f1 {
+  font-size: 2.5rem;
+}
