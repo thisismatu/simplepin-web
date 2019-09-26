@@ -2,14 +2,6 @@
   scroll-behavior: smooth;
 }
 
-.bg-sp-blue {
-  background: #06c;
-}
-
-.sp-blue, .hover-sp-blue:hover {
-  color: #06c;
-}
-
 .simplepin-video {
   background-image: url(../img/device.png);
   background-repeat: no-repeat;
