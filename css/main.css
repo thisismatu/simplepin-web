@@ -34,3 +34,11 @@
 .lh-subtitle {
   line-height: 1.334;
 }
+
+.bg-sp-blue {
+  background-color: #06C;
+}
+
+.bg-sp-light-blue {
+  background-color: #E0F0FF;
+}
