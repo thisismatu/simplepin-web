@@ -1,9 +1,15 @@
-.smooth-scroll {
+html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  color: #666;
+  line-height: 1.5;
+}
+
 .simplepin-video {
-  background-image: url(../img/device.png);
+  background-image: url(/device.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto;
@@ -23,18 +29,6 @@
   outline: none;
 }
 
-.f1 {
-  font-size: 2.5rem;
-}
-
-.lh-title {
-  line-height: 1.2;
-}
-
-.lh-subtitle {
-  line-height: 1.334;
-}
-
 .bg-sp-blue {
   background-color: #06C;
 }
@@ -45,4 +39,9 @@
 
 .gray {
   color: #666;
+}
+
+.obfuscate {
+  unicode-bidi: bidi-override;
+  direction: rtl;
 }
