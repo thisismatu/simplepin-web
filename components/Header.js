@@ -9,7 +9,7 @@ const Header = ({ image, title, description }) => (
       </a>
       <nav className="ml-auto db-ns dn">
         <a href="/#features" className="link color-inherit hover-near-black pa3">Features</a>
-        <a href="http://onelink.to/66ee75" className="link color-inherit hover-near-black pa3">Get the app</a>
+        <a href="http://onelink.to/66ee75" className="link color-inherit hover-near-black pa3" target="_blank" rel="noopener noreferrer">>Get the app</a>
       </nav>
     </div>
   </header>

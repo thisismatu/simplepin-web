@@ -25,13 +25,13 @@ const Home = () => (
             <h1 className="f1 lh-title mt0 mb3 near-black">A simple and free Pinboard app</h1>
             <h2 className="f3 fw4 mt0 mb3 near-black">Read, add and manage your Pinboard bookmarks with ease. No frills, just the basics done well.</h2>
             <div className="pv2 mb3 flex flex-wrap">
-              <a href="https://itunes.apple.com/us/app/simplepin/id1107506693?ls=1&mt=8" className="dim ma2 ml0 flex-shrink-0">
+              <a href="https://itunes.apple.com/us/app/simplepin/id1107506693?ls=1&mt=8" className="dim ma2 ml0 flex-shrink-0" target="_blank" rel="noopener noreferrer">
                 <img src="/btn-appstore.svg" height="56" className="db" />
               </a>
             </div>
             <div className="f6">
               <span className="db i">“It’s super fast, has a decent share extension, supports 1Password, makes it easy to search for things in your bookmarks list — try typing in multiple tags; it works flawlessly – and even supports Split View multitasking on iPad.”</span>
-              <a className="dib link color-inherit hover-near-black mt2" href="https://thesweetsetup.com/apps/best-pinboard-app-ios/">– The Sweet Setup</a>
+              <a href="https://thesweetsetup.com/apps/best-pinboard-app-ios/" className="dib link color-inherit hover-near-black mt2" target="_blank" rel="noopener noreferrer">>– The Sweet Setup</a>
             </div>
           </div>
           <div className="w-50-l w-100">
