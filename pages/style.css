@@ -96,6 +96,13 @@ h4 {
   padding: 1rem;
 }
 
+.content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2vw calc(2vw + 1rem) 6vw;
+  color: var(--primary);
+}
+
 .hero {
   max-width: 80rem;
   margin: 0 auto;
@@ -275,25 +282,4 @@ footer {
 .footer-link {
   padding: 1rem;
   font-size: .875rem;
-}
-
-.link:focus {
-  outline: none;
-}
-
-.bg-sp-blue {
-  background-color: #06C;
-}
-
-.bg-sp-light-blue {
-  background-color: #E0F0FF;
-}
-
-.gray {
-  color: #666;
-}
-
-.obfuscate {
-  unicode-bidi: bidi-override;
-  direction: rtl;
 }
