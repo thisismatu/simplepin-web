@@ -45,6 +45,16 @@ h2 {
   font-size: 2.25rem;
 }
 
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 h3 {
   font-size: 1.5rem;
 }
@@ -108,8 +118,13 @@ h4 {
   margin: 0 auto;
   padding: 2vw 2vw 8vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
   justify-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .hero-content,
@@ -124,10 +139,15 @@ h4 {
 }
 
 .hero-title {
-  font-size: 3.75rem;
   line-height: 1.125;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 960px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
 }
 
 .hero-subtitle {
@@ -217,6 +237,12 @@ h4 {
   margin-bottom: 1rem;
 }
 
+@media only screen and (min-width: 960px) {
+  .features-title {
+    font-size: 3rem;
+  }
+}
+
 .features-subtitle {
   color: var(--primary);
   font-size: 1.25rem;
@@ -229,7 +255,12 @@ h4 {
   display: grid;
   grid-column-gap: 3rem;
   grid-row-gap: 4rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+}
+
+@media only screen and (min-width: 600px) {
+  .features-list {
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  }
 }
 
 .feature {

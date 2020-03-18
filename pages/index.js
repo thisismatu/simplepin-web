@@ -49,7 +49,7 @@ const Home = () => (
       <section id="features">
         <div className="features">
           <div className="features-header">
-            <h1 className="features-title">Just the basics done well</h1>
+            <h2 className="features-title">Just the basics done well</h2>
             <p className="features-subtitle">I built Simplepin because there wasn’t a decent and free Pinboard client available. It’s built for the Pinboard user who appreciates a tool that does one thing well.</p>
           </div>
           <div className="features-list">
