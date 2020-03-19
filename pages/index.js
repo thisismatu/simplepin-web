@@ -55,20 +55,20 @@ const Home = () => (
           <div className="features-list">
             <div className="feature">
               <div className="feature-icon">
-                <img src="/ic-search.svg" width="36" />
+                <img src="/ic-tag.svg" width="24" />
               </div>
               <div className="feature-content">
                 <h4 className="feature-title">Powerful search</h4>
-                <p className="feature-body">Find your bookmarks with ease by using multiple search terms</p>
+                <p className="feature-body">With Simplepins powerful search, finding your bookmarks is super easy</p>
               </div>
             </div>
             <div className="feature">
               <div className="feature-icon">
-                <img src="/ic-share.svg" width="24" />
+                <img src="/ic-send.svg" width="24" />
               </div>
               <div className="feature-content">
                 <h4 className="feature-title">Share extension</h4>
-                <p className="feature-body">Add bookmarks from the browser with the nifty share extension</p>
+                <p className="feature-body">Add new bookmarks directly from your browser with the handy share extension</p>
               </div>
             </div>
             <div className="feature">
