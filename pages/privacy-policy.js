@@ -10,7 +10,7 @@ const PrivacyPolicy = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
     <Header />
-    <main>
+    <section id="content" >
       <div className="content">
         <h2>Simplepin Privacy Policy</h2>
         <p><em>Last updated: 25.4.2016</em></p>
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => (
         <p>This Privacy Policy is effective as of 25.4.2016 and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.</p>
         <p>If you have any questions about this Privacy Policy, please contact me.</p>
       </div>
-    </main>
+    </section>
     <Footer />
   </>
 )

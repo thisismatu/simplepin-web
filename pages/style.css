@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: var(--background-alt);
+  background-color: var(--background);
   color: var(--secondary);
   font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
   line-height: 1.5;
@@ -65,8 +65,11 @@ h4 {
   font-weight: 600;
 }
 
-header {
-  background-color: var(--background);
+header,
+footer,
+#content,
+#hero,
+#features, {
   padding-left: 2vw;
   padding-right: 2vw;
 }
@@ -114,23 +117,11 @@ header {
   padding: 1rem;
 }
 
-main {
-  background-color: var(--background);
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-
 .content {
   max-width: 75rem;
   margin: 0 auto;
   padding: 2vw 1rem max(8vw, 8vh);
   color: var(--primary);
-}
-
-#hero {
-  background-color: var(--background);
-  padding-left: 2vw;
-  padding-right: 2vw;
 }
 
 .hero {
@@ -240,8 +231,6 @@ main {
 
 #features {
   background-color: var(--background-alt);
-  padding-left: 2vw;
-  padding-right: 2vw;
 }
 
 .features {
@@ -313,8 +302,6 @@ main {
 
 footer {
   background-color: var(--background-alt);
-  padding-left: 2vw;
-  padding-right: 2vw;
 }
 
 .footer {
