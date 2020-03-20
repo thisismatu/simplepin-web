@@ -69,7 +69,7 @@ header,
 footer,
 #content,
 #hero,
-#features, {
+#features {
   padding-left: 2vw;
   padding-right: 2vw;
 }
