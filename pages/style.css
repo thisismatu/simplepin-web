@@ -17,8 +17,9 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  background-color: var(--background-alt);
   color: var(--secondary);
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -64,10 +65,17 @@ h4 {
   font-weight: 600;
 }
 
+header {
+  background-color: var(--background);
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
 .header {
-  max-width: 80rem;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -106,18 +114,29 @@ h4 {
   padding: 1rem;
 }
 
+main {
+  background-color: var(--background);
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
 .content {
-  max-width: 80rem;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 2vw calc(2vw + 1rem);
-  padding-bottom: max(8vw, 8vh);
+  padding: 2vw 1rem max(8vw, 8vh);
   color: var(--primary);
 }
 
+#hero {
+  background-color: var(--background);
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
 .hero {
-  max-width: 80rem;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 2vw;
+  padding-top: 2vw;
   padding-bottom: max(8vw, 8vh);
   display: grid;
   justify-items: center;
@@ -221,12 +240,13 @@ h4 {
 
 #features {
   background-color: var(--background-alt);
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .features {
-  max-width: 80rem;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 2vw;
   padding-top: max(8vw, 8vh);
   padding-bottom: max(8vw, 8vh);
 }
@@ -293,12 +313,15 @@ h4 {
 
 footer {
   background-color: var(--background-alt);
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .footer {
-  max-width: 80rem;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
