@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import { AppStoreButton, GooglePlayButton } from '../components/StoreButtons'
+import { AppStoreButton } from '../components/StoreButtons'
 
 const Home = () => (
   <>

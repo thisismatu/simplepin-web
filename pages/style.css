@@ -279,16 +279,21 @@ footer,
 .feature {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 .feature-icon {
-  width: 20%;
-  max-width: 30px;
-  min-width: 25px;
+  padding: 0.75rem;
+  background-color: #06C;
+  border-radius: 100%;
+}
+
+.feature-icon img {
+  display: block;
 }
 
 .feature-content {
-  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .feature-title {
