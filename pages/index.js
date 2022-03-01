@@ -3,6 +3,85 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { AppStoreButton } from '../components/StoreButtons'
 
+const reviews = [
+  {
+    rating: 2,
+    title: "Superb",
+    body: "Does a few things extremely well. If you want a simple and very capable app for pinboard, this is the best to start with and it may be all you ever need. Well done.",
+    user: "Mike Bradshaw"
+  },
+  {
+    rating: 5,
+    title: "Almost perfect",
+    body: "I love this app. I was using the bookmark version for Safari, but now that there’s a share extension, I use the app exclusively. The only thing I’d change is the ability to add tags in the first pop up instead of going to options. Thank you for making such a great app, and for free too!",
+    user: "Emmachette"
+  },
+  {
+    rating: 5,
+    title: "Good pinboard app",
+    body: "Good, simple, and does what I expected it too. Not sure how I could expect any more from a free app.",
+    user: "sndean1"
+  },
+]
+
+const features = [
+  {
+    icon: "/ic-tag.svg",
+    title: "Powerful search",
+    body: "With Simplepins powerful search, finding your bookmarks is super easy."
+  },
+  {
+    icon: "/ic-send.svg",
+    title: "Share extension",
+    body: "Add new bookmarks directly from your browser with the handy share extension."
+  },
+  {
+    icon: "/ic-reader-mode.svg",
+    title: "Reader mode",
+    body: "Focus on reading without ads, floats or other distractions."
+  },
+  {
+    icon: "/ic-split-view.svg",
+    title: "Multitasking",
+    body: "Open links in external browser and enjoy split screen multitasking."
+  },
+  {
+    icon: "/ic-lock.svg",
+    title: "Password manager",
+    body: "Integrates with password managers like LastPass and 1Password."
+  },
+]
+
+const Review = ({ rating, title, body, user, href }) => (
+  <div className="review">
+    {rating && (
+      <div className="review-rating">
+        <img alt="star" src="/star.svg" />
+        <img alt="star" src="/star.svg" />
+        <img alt="star" src="/star.svg" />
+        <img alt="star" src="/star.svg" />
+        <img alt="star" src="/star.svg" />
+      </div>
+    )}
+    {title && <span className="review-title">{title}</span>}
+    <span className="review-text">“{body}”</span>
+    <span className="review-source">
+      {href && <a href="https://thesweetsetup.com/apps/best-pinboard-app-ios/" target="_blank" rel="noopener noreferrer">– {user}</a>}
+      {!href && <>– {user}</>}
+    </span>
+  </div>
+)
+
+const Feature = ({ icon, title, body }) => (
+  <div className="feature">
+    <div className="feature-icon">
+      <img src={icon} width="24" />
+    </div>
+    <h4 className="feature-title">{title}</h4>
+    <p className="feature-body">{body}</p>
+  </div>
+)
+
 const Home = () => (
   <>
     <Head>
@@ -28,12 +107,11 @@ const Home = () => (
             <AppStoreButton />
           </div>
           <div className="hero-review">
-            <div className="review">
-              <span className="review-text">“It’s super fast, has a decent share extension, supports 1Password, makes it easy to search for things in your bookmarks list — try typing in multiple tags; it works flawlessly – and even supports Split View multitasking on iPad.”</span>
-              <span className="review-source">
-                <a href="https://thesweetsetup.com/apps/best-pinboard-app-ios/" target="_blank" rel="noopener noreferrer">– The Sweet Setup</a>
-              </span>
-            </div>
+            <Review
+              body="It’s super fast, has a decent share extension, supports 1Password, makes it easy to search for things in your bookmarks list — try typing in multiple tags; it works flawlessly – and even supports Split View multitasking on iPad."
+              user="The Sweet Setup"
+              href="https://thesweetsetup.com/apps/best-pinboard-app-ios/"
+            />
           </div>
         </div>
         <div className="hero-video">
@@ -45,6 +123,19 @@ const Home = () => (
         </div>
       </div>
     </section>
+    <section id="reviews">
+      <div className="reviews">
+        {reviews.map((item, index) =>
+          <Review
+            key={index}
+            rating={item.rating}
+            title={item.title}
+            body={item.body}
+            user={item.user}
+          />
+        )}
+      </div>
+    </section>
     <section id="features">
       <div className="features">
         <div className="features-header">
@@ -52,51 +143,14 @@ const Home = () => (
           <p className="features-subtitle">I built Simplepin because there wasn’t a decent and free Pinboard client available. It’s built for the Pinboard user who appreciates a tool that does one thing well.</p>
         </div>
         <div className="features-list">
-          <div className="feature">
-            <div className="feature-icon">
-              <img src="/ic-tag.svg" width="24" />
-            </div>
-            <div className="feature-content">
-              <h4 className="feature-title">Powerful search</h4>
-              <p className="feature-body">With Simplepins powerful search, finding your bookmarks is super easy</p>
-            </div>
-          </div>
-          <div className="feature">
-            <div className="feature-icon">
-              <img src="/ic-send.svg" width="24" />
-            </div>
-            <div className="feature-content">
-              <h4 className="feature-title">Share extension</h4>
-              <p className="feature-body">Add new bookmarks directly from your browser with the handy share extension</p>
-            </div>
-          </div>
-          <div className="feature">
-            <div className="feature-icon">
-              <img src="/ic-reader-mode.svg" width="24" />
-            </div>
-            <div className="feature-content">
-              <h4 className="feature-title">Reader mode</h4>
-              <p className="feature-body">Focus on reading without ads, floats or other distractions</p>
-            </div>
-          </div>
-          <div className="feature">
-            <div className="feature-icon">
-              <img src="/ic-split-view.svg" width="24" />
-            </div>
-            <div className="feature-content">
-              <h4 className="feature-title">Multitasking</h4>
-              <p className="feature-body">Open links in external browser and enjoy split screen multitasking</p>
-            </div>
-          </div>
-          <div className="feature mr-auto">
-            <div className="feature-icon">
-              <img src="/ic-lock.svg" width="24" />
-            </div>
-            <div className="feature-content">
-              <h4 className="feature-title">Password manager</h4>
-              <p className="feature-body">Integrates with password managers like LastPass and 1Password</p>
-            </div>
-          </div>
+          {features.map((item, index) =>
+            <Feature
+              key={index}
+              icon={item.icon}
+              title={item.title}
+              body={item.body}
+            />
+          )}
         </div>
       </div>
     </section>

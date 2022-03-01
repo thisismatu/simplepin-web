@@ -8,6 +8,7 @@ const Header = ({ image, title, description }) => (
         <span className="header-logoText">Simplepin</span>
       </a>
       <nav className="header-navigation">
+        <a href="/#reviews" className="header-navigationItem">Reviews</a>
         <a href="/#features" className="header-navigationItem">Features</a>
         <a href="http://onelink.to/66ee75" className="header-navigationItem" target="_blank" rel="noopener noreferrer">Get the app</a>
       </nav>
